@@ -1,0 +1,23 @@
+{
+  "name": "Wiquid",
+  "authors": [
+    "janfix <jean.philippe.riviere@gmail.com>"
+  ],
+  "description": "Site par Wiquid",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7"
+  }
+}

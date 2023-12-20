@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+    
+}
+main{
+    width : 1080px;
+    margin : 20px;
+    padding: 10px;
+    border : 1px solid grey;
+}
+
+.parameters{
+   
+    display: flex;
+    justify-content: space-between; /* Pour espacer uniformément les divs */
+}
+
+.param {
+    flex-grow: 1; /* Permet à chaque div de grandir et de remplir l'espace */
+    margin-right: 10px; /* Espacement entre les divs */
+}
+
+.param:last-child {
+    margin-right: 0; /* Enlève la marge à droite du dernier élément */
+}
+
+.form-control {
+    width: 100%; /* Assure que les éléments de formulaire remplissent leur div parent */
+}
+
+#fakeprompt{
+    border : 1px solid grey;
+    padding: 10px;
+    color : white;
+    background-color: #343541;
+}
+
+textarea{
+    padding : 5px;
+}
+
+img{
+    margin : 10px;
+    border : 1px solid grey;
+}

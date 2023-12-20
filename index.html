@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wiquid</title>
+	<link rel="stylesheet" href="js/libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main>
+<h1>Generate QTI Match Interaction from ChatGPT</h1>
+<p>Hello everybody, this new tool offers the possibility to use chatGPT to generate Match interaction item in the QTI v2.2 standard.</p>
+<b>Fill the form to prepare your new item</b>
+<div class="parameters">
+	<div class="param">
+	<input class="form-control" id="title" type="text" placeholder="Title">
+	</div>
+	<div class="param"><input class="form-control" id="label" type="text" placeholder="Label *"></div>
+	
+	<div class="param"><select class="form-control" id="language">
+		<option value="en-US">English</option>
+		<option value="fr-FR">French</option>
+	</select></div>
+</div>
+<div style="margin-top:10px">
+	<input class="form-control"  id="prompt" type="text" placeholder="Prompt" style="width:850px">
+</div>
+<br />
+<b>Create a prompt in chat GPT on this model</b>
+<p id="fakeprompt">I would like to create a <i>geography</i> question in the following form: a table with 5 columns and 10 rows, with the names of <i>5 European countries</i> in the column headings, and the names of their <i>capitals</i> in no particular order in the row headings.To answer the question, you need to tick the boxes with this symbol : [x]. Can you generate 3 examples for me?</p>
+<b>Select the table copy and paste in the textarea below</b>
+<div class="example">
+<img title="Aspect in ChatGPT" src="img/ChatGptTable.png">
+<img title="Once it has been pasted" src="img/pasteInTextBox.png">
+</div>
+<br>
+<p><span style="color : #dc3545">No empty line before or after !</span> You are now ready to press the Convert Button</p>
+<button id="mybutton" class="btn btn-primary">Convert Text Array to QTI - Match interaction </button>  <button disabled="disabled" id="download-btn" class="btn btn-primary downloadBT">Download</button><br><br>	
+<textarea placeholder="Paste here a text formated array from ChatGPT" name="Good" id="mytextarea" cols="100" rows="15"></textarea>
+
+<h4>Check the xml :</h4> 
+<p>Download the qti.xml file ! And import it into a QTI compliant platform.</p>
+<button disabled="disabled" id="download-btn" class="btn btn-primary downloadBT">Download</button><br><br>
+<textarea id="newqti" cols="100" rows="15" ></textarea>
+</main>
+<script src="js/libs/jquery/dist/jquery.min.js"></script>
+<script src="js/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/wiquid.js"></script>
+
+</body>
+</html>
